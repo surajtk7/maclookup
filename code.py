@@ -11,7 +11,7 @@ def get_args():
     
     parser = argparse.ArgumentParser() 
       
-    # We need the apiKey and the MAC address
+    # Get apiKey and the MAC address from the command line
     parser.add_argument("-m", "--macaddress", 
                         dest="mac_address", 
                         help="MAC Address of the device. "
@@ -45,7 +45,7 @@ def get_vendor_details(mac_address,apiKey):
     # Fetching the vendor details using GET method
     response = requests.get(API) 
     if response.status_code != 200: 
-        raise Exception("Invalid MAC Address!") 
+        raise Exception("Invalid MAC Address or API Key") 
     return response.text
   
 # Main 
@@ -65,5 +65,4 @@ if __name__ == "__main__":
     except:  
         
          # If something goes wrong 
-        print("An error occurred. Check "
-              "your Internet connection.") 
+        print("An error occurred") 
