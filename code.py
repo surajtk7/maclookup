@@ -22,11 +22,11 @@ def get_args():
                         help="API key to be used"
                         )                    
                                             
-    values = parser.parse_args() 
+    inputs = parser.parse_args() 
       
     # Check if address and apiKey were entered 
-    if values.mac_address and values.apiKey: 
-        return values 
+    if inputs.mac_address and inputs.apiKey: 
+        return inputs 
     else: 
         parser.error("Invalid Syntax. "
                      "Use --help for more details.")  
@@ -51,9 +51,9 @@ def get_vendor_details(mac_address,apiKey):
 # Main 
 if __name__ == "__main__": 
     
-    values = get_args()
-    mac_address=values.mac_address
-    apiKey=values.apiKey 
+    inputs = get_args()
+    mac_address=inputs.mac_address
+    apiKey=inputs.apiKey 
 
     print("Fetching Details...") 
    
