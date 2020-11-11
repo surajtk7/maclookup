@@ -21,7 +21,7 @@ docker run maclookup -h
 ```
 # Example :
 
- For obtaining the company name to which the MAC address belongs, Run the following command where **"-a"** refers to the **"apiKey"** and **"-m"** refers to the **"MAC address"**.  (**Dummy apiKey is used here**)
+ For obtaining the company name to which the MAC address belongs, Run the following command where **"-a"** refers to the **"API Key"** and **"-m"** refers to the **"MAC address"**.  (**Dummy API Key is used here**)
 ```
 docker run maclookup -a=at_PElKcjAqk1mdWnBA6Lwi48PDYizlP -m=44:38:39:ff:ef:57
 ```
