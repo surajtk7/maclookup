@@ -8,7 +8,7 @@ Move into the directory
 ```
 cd maclookup
 ```
-Docker is used to build the application and run it correspondingly. The application is written in Python.  
+Docker is used to build the application and run it correspondingly. The application is written in Python as it is versatile, easy to use and fast to develop.  
 
 
 Build the container 
